@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Migra';
+    src: url('fonts/Migra-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Migra';
+    src: url('fonts/Migra-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MigraItalic';
+    src: url('fonts/MigraItalic-ExtralightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'MigraItalic';
+    src: url('fonts/MigraItalic-ExtraboldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pic.png');
+    background-size: cover;
+    background-position: center;
+    width: calc(100% - 20px);
+    height: calc(100vh - 20px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Migra', Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.title {
+    margin: 0 0 20px 0;
+    font-family: 'MigraItalic', 'Migra', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 60px;
+}
+
+.text-container {
+    max-width: 600px;
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+p {
+    margin: 0;
+}
+
+.hyperlink {
+    margin-top: 8px;
+    font-family: 'Migra', Arial, sans-serif;
+    font-size: 24px;
+}
+
+.hyperlink a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.hyperlink a:hover {
+    color: orange;
+}
