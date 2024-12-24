@@ -3,27 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pine Nguyen </title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Pine Nguyen</title>
+    <style>
+        @font-face {
+            font-family: 'Migra';
+            src: url('fonts/Migra-Extralight.ttf') format('truetype');
+            font-weight: 200;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Migra';
+            src: url('fonts/Migra-Extrabold.ttf') format('truetype');
+            font-weight: 800;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'MigraItalic';
+            src: url('fonts/MigraItalic-ExtralightItalic.ttf') format('truetype');
+            font-weight: 200;
+            font-style: italic;
+        }
+        
+        @font-face {
+            font-family: 'MigraItalic';
+            src: url('fonts/MigraItalic-ExtraboldItalic.ttf') format('truetype');
+            font-weight: 800;
+            font-style: italic;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            border-radius: 10px;
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+            width: calc(100% - 20px);
+            height: calc(100vh - 20px);
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Migra', Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        /* for less visible backgrounds */
+        /* .title, .text-container, .hyperlink {
+            mix-blend-mode: difference;
+            color: white;
+        } */
+        .title {
+            margin: 0 0 20px 0;
+            font-family: 'MigraItalic', 'Migra', Arial, sans-serif;
+            font-weight: 200;
+            font-size: 60px;
+        }
+        .text-container {
+            max-width: 700px;
+            font-size: 28px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+        .text-container:last-child {
+            margin-bottom: 0;
+        }
+        p {
+            margin: 0;
+        }
+        .hyperlink {
+            margin-top: 10px;
+            font-family: 'Migra', Arial, sans-serif;
+            font-size: 28px;
+        }
+        .hyperlink a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .hyperlink a:hover {
+            opacity: 0.7;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Pine Nguyen</h1>
-    </header>
-    <main>
-        <section id="academic">
-            <h2>Academic</h2>
-            <p>Add your academic information here.</p>
-        </section>
-        <section id="experience">
-            <h2>Experience</h2>
-            <p>Add your work experience here.</p>
-        </section>
-        <section id="hobby">
-            <h2>Hobby</h2>
-            <p>Add information about your hobbies here.</p>
-        </section>
-    </main>
+    <div id="grain-container" class="box">
+        <div class="title">Pine Nguyen</div>
+        <div class="text-container">
+            <p>Hi, my name is Pine. I am an undergraduate student majoring in Computer Science and Data Science at UC Berkeley.<br>Get in touch with me at <i>pinenguyen(at)berkeley.edu</i></p>
+        </div>
+
+        <div class="hyperlink">
+            <a href="https://www.linkedin.com/in/pine-ng/" target="_blank" rel="noopener noreferrer">
+                LinkedIn →
+            </a>
+        </div>
+        <div class="hyperlink">
+            <a href="https://github.com/pine-ng" target="_blank" rel="noopener noreferrer">
+                Github →
+            </a>
+        </div>
+        <div class="hyperlink">
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                Instagram →
+            </a>
+        </div>
+        <div class="hyperlink">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                Photography →
+            </a>
+        </div>
+    </div>
 </body>
-
-
+</html>
